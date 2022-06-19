@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css" />
+    <title>Deacode - Template HTML Basic</title>
+  </head>
+  <body>
+    <section id="home">
+      <div class="container">
+        <!-- navigation bar start -->
+        <div class="navwrapper">
+          <ul class="navigation">
+            <li class="nav">
+              <a href="#home" class="navlink">HOME</a>
+            </li>
+            <li class="nav">
+              <a href="#start" class="navlink">START</a>
+            </li>
+            <li class="nav">
+              <a href="#reward" class="navlink">REWARD</a>
+            </li>
+          </ul>
+        </div>
+        <div class="contentwrapper">
+          <div class="title" id="title">Register Here</div>
+          <div id="register_form">            
+            <input type="text" placeholder="username" id="username"/>
+            <button onclick="registerClick()">Register</button>
+          </div>
+          <div id="registerDiv" style="display: none">
+            <h1 id="scoreText" style="color: white"></h1>
+            <h1 id="depositText" style="color: white"></h1>
+            <input type="text" placeholder="deposito" id="deposit"/>
+            <button onclick="depositClick()" id="depositButton">Tambah Deposit</button>
+            <button onclick="logoutClick()" id="logoutButton">Logout</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="start" class="loginedBox">
+      <div class="container red">
+        <div class="gamewrapper">
+          <div class="box" id="box1"></div>
+          <div class="box" id="box2"></div>
+          <div class="box" id="box3"></div>
+          <div id="box4"></div>
+          <div id="box5"></div>
+        </div>
+        <div class="buttonwrapper">
+          <button class="startButtton" onclick="setLevel(3)"> 1X </button>
+          <button class="startButtton" onclick="setLevel(4)"> 2X </button>
+          <button class="startButtton" onclick="setLevel(5)"> 3X </button>
+        </div>
+        <div class="buttonwrapper">
+          <button class="startButtton" onclick="startOnClick()">START</button>
+          <button class="startButtton" onclick="stopOnClick()">STOP</button>
+        </div>
+      </div>
+    </section>
+    <section id="reward" class="loginedBox">
+      <div class="container blue">
+        <div class="contentwrapper" id="imgReward"> 
+          <h1>AMBIL REWARD ANDA <a href="https://www.youtube.com/watch?v=DLzxrzFCyOs&t=11s&ab_channel=AllKindsOfStuff">DISINI</a> 💕</h1>
+          <iframe width="700" height="400" src="" title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="rewardVideo" >
+          </iframe>
+        </div>
+      </div>
+    </section>
+    <div class="top" id="top" onclick="directing()">☝</div>
+    <script>
+      function directing(){
+        location.href = "#home"
+      }
+    </script>
+    <script src="variableConst/globalObject.js"></script>
+    <script src="module/model.js"></script>
+    <script src="view/indexView.js"></script>
+    <script src="logic/playerHandler.js"></script>
+    <script src="logic/judiHandler.js"></script>
+  </body>
+</html>
