@@ -20,15 +20,16 @@ section {
 .container {
   width: 100%;
   height: 100%;
-  background-color: #222;
+  background-image: url("https://i.ytimg.com/vi/vrl7Xd3M1FM/maxresdefault.jpg");
+  /* background-repeat: no-repeat; */
 }
 
 .red {
-  background-color: crimson;
+  background-color: white;
 }
 
 .blue {
-  background-color: slateblue;
+  background-color: rgb(7, 114, 253);
 }
 
 .title {
@@ -40,7 +41,7 @@ section {
 .navwrapper {
   width: 100%;
   height: 80px;
-  background-color: crimson;
+  background-color: #3AB0FF;
   position: fixed;
   top: 0;
   left: 0;
@@ -53,6 +54,17 @@ section {
   align-items: center;
   width: 100%;
   height: 100%;
+}
+
+.background{
+  background:#3AB0FF;
+  padding: 30px;
+  border-radius: 5%;
+}
+
+.background1{
+  background:#3AB0FF;
+  padding: 30px;
 }
 
 .gamewrapper {
